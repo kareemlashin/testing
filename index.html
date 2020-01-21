@@ -1,14 +1,15 @@
+<!DOCTYPE html>
 <html>
 
 <head>
+    <title>new </title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/jquery-3-4-1-min.js"></script>
-    <script src="js/popper-min.js"></script>
-    <script src="js/bootstrap-min.js"></script>
+
 </head>
 
 <body>
@@ -18,24 +19,26 @@
             <a class="navbar-brand" href="#"><i class="fas fa-map-marker-alt"></i> SPEAKER</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon">
+                    <i class="fas fa-bars"></i>
+                </span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT</a>
+                        <a class="nav-link" href="#ABOUT">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">SERVICES</a>
+                        <a class="nav-link" href="#SERVICES">SERVICES</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">BLOG</a>
+                        <a class="nav-link" href="#BLOG">BLOG</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACTS</a>
+                        <a class="nav-link" href="#CONTACTS">CONTACTS</a>
                     </li>
 
 
@@ -46,14 +49,14 @@
     </nav>
     <!--end nav-->
     <!--start header-->
-    <header>
+    <header id="home">
         <div class="cover">
             <div class="container">
 
                 <div class="title text-center">
                     <div>
                         <h1>
-                            Speaking to the world and people
+                            Speaking to <span class="element"></span>
 
                         </h1>
                         <p class="pt-4">
@@ -69,8 +72,9 @@
         </div>
 
     </header>
+
     <!--end header-->
-    <section>
+    <section id="ABOUT" class="our">
         <div class="container">
 
             <div class="row mb-5">
@@ -147,32 +151,32 @@
         </div>
 
     </section>
-    <section class="sec-3">
+    <section class="sec-3 contSection">
         <div class="container">
             <div>
                 <div class="row">
 
                     <div class="col-lg-3 col-md-6 pt-5 pb-5 text-center">
                         <div><i class="fas fa-hands-helping mb-3"></i></div>
-                        <div>250</div>
+                        <div id="oneCount"></div>
                         <div class="mb-5">Speakers</div>
                     </div>
                     <div class="col-lg-3 col-md-6 pt-5 pb-5 text-center">
                         <div><i class="fas fa-map-marked mb-3"></i></div>
-                        <div>250</div>
+                        <div id="threeCount"></div>
                         <div class="mb-5">Speakers</div>
                     </div>
                     <div class="col-lg-3 col-md-6 pt-5 pb-5 text-center">
                         <div><i class="far fa-image mb-3 "></i></div>
-                        <div>250</div>
+                        <div id="twoCount"></div>
                         <div>Speakers</div>
                     </div>
                     <div class="col-lg-3 col-md-6 pt-5 pb-5 text-center">
                         <div>
                             <i class="fas fa-hdd mb-3"></i>
 
-                            </i></div>
-                        <div>250</div>
+                        </div>
+                        <div id="fourCount"></div>
                         <div>Speakers</div>
                     </div>
                 </div>
@@ -180,7 +184,8 @@
             </div>
         </div>
     </section>
-    <section>
+
+    <section id="SERVICES">
         <div class="container mb-5 cards">
             <div class="text-center mb-5">
                 <div>
@@ -301,22 +306,21 @@
                             <p> Tom is an expert in Innovative Technologies in Production Sphere. If you want to hear
                                 absolutely exclusive information, come to his conference!
                             </p>
-
                             <div class=" row timer pt-5 pb-5">
                                 <div class="col">
-                                    <div>186 :</div>
+                                    <div id="days"></div>
                                     <div>days</div>
                                 </div>
                                 <div class="col">
-                                    <div>23 :</div>
+                                    <div id="hours"></div>
                                     <div>hour</div>
                                 </div>
                                 <div class="col">
-                                    <div>23 :</div>
+                                    <div id="minutes"></div>
                                     <div>min</div>
                                 </div>
                                 <div class="col">
-                                    <div> 55</div>
+                                    <div id="seconds"></div>
                                     <div>second</div>
                                 </div>
                             </div>
@@ -339,7 +343,7 @@
 
                 </div>
             </div>
-
+        </div>
     </section>
     <section>
         <div class="container">
@@ -484,7 +488,8 @@
             </div>
         </div>
     </section>
-    <section>
+
+    <section id="BLOG">
         <div class="container">
             <div class="title-12 text-center mt-5 mb-5">
                 <h2 class="pt-5">RECENT NEWS</h2>
@@ -559,7 +564,7 @@
 
         </div>
     </section>
-    <section>
+    <section id="CONTACTS">
         <div class="container">
 
             <div class="title-12 text-center pt-5 pb-3">
@@ -692,8 +697,9 @@
         </div>
     </footer>
     <div class="end text-center pt-5 pb-5">
-        <h5 class="pb-5">@copy right by <span>kareem lashin</span> design by <span> route  </span> <i class="fab fa-artstation"></i> </h5>
-        <ul >
+        <h5 class="pb-5">@copy right by <span>kareem lashin</span> design by <span> route </span> <i
+                class="fab fa-artstation"></i> </h5>
+        <ul>
             <li> <i class="fab fa-facebook-f"></i></li>
             <li>
                 <i class="fab fa-facebook-messenger"></i> </li>
@@ -712,8 +718,28 @@
             </li>
         </ul>
     </div>
-
-
+    <div class="upPage">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    <div id="load">
+        <div class="lds-grid">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <script src="js/jquery-3-4-1-min.js"></script>
+    <script src="js/popper-min.js"></script>
+    <script src="js/bootstrap-min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/typed.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
